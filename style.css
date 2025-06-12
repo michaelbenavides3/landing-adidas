@@ -68,8 +68,8 @@ nav {
 }
 /* estilos para menue con hover */
 .menu a:hover {
-  color: dodgerblue; /*color cuando el mouse pasa por encima*/
-  border-bottom: 2px solid white; /*linea que sale dabajo del texti*/
+  color: skyblue; /*color cuando el mouse pasa por encima*/
+  border-bottom: 2px solid yellow; /*linea que sale dabajo del texti*/
 }
 
 /* estilos para la class. producto */
@@ -96,14 +96,22 @@ nav {
 }
 /* estilos para el h2 */
 h2 {
-  padding-left: 200px;
+  padding-left: 315px;
   color: gold;
   padding-bottom: 80px;
 }
 
+
 /*margin para distancia el precio*/
 .precio{
+  color: white;
+  font-weight: bold;
   margin-bottom: 25px;
+}
+
+.descripcion{
+  color: white;
+  font-weight: bold;
 }
 
 /*boton añadir carro y estilos*/
@@ -128,7 +136,7 @@ h2 {
   width: 122px;
   height: 28px;
   margin: 0 auto;
-  margin-left: 100px;
+  margin-left: 300px;
   margin-top: 30px;
 }
 
