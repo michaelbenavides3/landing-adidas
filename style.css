@@ -129,6 +129,7 @@ h2 {
 .añadir_carrito:hover{
   color: yellow;
   transition: 1s;
+  cursor: pointer;
 }
 
 /*estilos para centrar el boton*/
