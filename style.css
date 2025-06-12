@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray; /*color de fonde*/
+  font-family: "Franklin Gothic Medium"; /*tipo de letra*/
+}
+
+/* menu y logo */
+header {
+  background-color: gray; /*color de fondo*/
+  padding: 15px auto; /*espacio arriba y abajo*/
+  position: fixed; /*para que se encuetre fijo en la parte superior*/
+  /* top: 0; no dejar margen */
+  width: 100%; /*ocupado el 100% de pagina*/
+  z-index: 1000; /*se encuentre encima de los demas elementos*/
+}
+
+/* estilos al menu de navegacion */
+nav {
+  width: 90%; /*ocupar ancho del 90% de la pagina*/
+  margin: 0 auto; /*centrado*/
+  /* overflow: hidden; */
+}
+
+/* .logo estilos personalizado */
+
+.logo {
+  float: left; /*float,left, quiere decir que use el espacio izquierdo*/
+  width: 30%;
+}
+
+/* estilos opcion_producto */
+.opcion_producto h2{
+  color: skyblue;
+  margin-top: 40px;
+}
+
+/*estilos para menu*/
+.menu {
+  float: right; /*ocupar el espacio derecho */
+  width: 70%; /*ocupar el 70% de la pagina*/
+  list-style: none; /*quitar las enumeraciones*/
+  text-align: right; /*texto alineado a la derecha*/
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* estilos para menu y listas */
+.menu li {
+  display: inline-block;
+  margin-left: 30px; /*espacio interno entre botones*/
+  text-decoration: none;
+}
+
+/* estilos para menu y enlaces */
+.menu a {
+  color: white; /*color del texto*/
+  margin-top: 80px; /*magen para retirarlo de arriba*/
+  text-decoration: none; /*sin subrayado*/
+  font-size: 2rem; /*tamaño de la letra*/
+  font-weight: bold; /*grueso de letra*/
+  padding: 10px 10px; /**/
+  display: block;
+}
+/* estilos para menue con hover */
+.menu a:hover {
+  color: dodgerblue; /*color cuando el mouse pasa por encima*/
+  border-bottom: 2px solid white; /*linea que sale dabajo del texti*/
+}
+
+/* estilos para la class. producto */
+.producto {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* estilos columna izquierda */
+.columna_izquierda {
+  float: left; /*se encuetre a la izquierda*/
+  width: 50%; /*ocupe un ancho de la pagina*/
+  padding-top: 200px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+/* estilos columna derecha */
+.columna_derecha {
+  float: right; /*se encuentra situada a la derecha*/
+  width: 50%; /*ocupe el ancho de la pagina*/
+  padding-left: 20px;
+  box-sizing: border-box; /*aplicamos border-box paa que se comporte de manera uniforme*/
+  padding-top: 300px;
+}
+/* estilos para el h2 */
+h2 {
+  padding-left: 200px;
+  color: gold;
+  padding-bottom: 80px;
+}
+
+/*margin para distancia el precio*/
+.precio{
+  margin-bottom: 25px;
+}
+
+/*boton añadir carro y estilos*/
+.añadir_carrito{
+  width: 120px;
+  height: 25px;
+  background-color: lightslategrey;
+  color: gold;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+/*estilo para cuando pase el mouse por encima del boton*/
+.añadir_carrito:hover{
+  color: yellow;
+  transition: 1s;
+}
+
+/*estilos para centrar el boton*/
+.class_boton{
+  width: 122px;
+  height: 28px;
+  margin: 0 auto;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+/* estilos para navegacion responsivo movil */
+
+@media (max-width: 768px){
+  header{
+    padding: 10px 0; /*menos espacia*/
+  }
+  nav{
+    width: 95%; /*para que se haga mas ancho en el movil*/
+  }
+  /* estilos logo */
+  .logo{
+    float: none; /*ya no es flotante*/
+    width: 100%; /*ancho completo*/
+    text-align: center; /*centrado*/
+    margin-bottom: 15px; /*abajo*/
+  }
+  /* estilo menu */
+  .menu{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  /* estilos para el menu lista */
+  .menu li{
+    display: block;
+    margin: 5px 0;
+    margin-left: 0;
+  }
+  /* estilos para el menu y enlaces */
+  .menu a{
+    padding: 10px;
+    font-size: 16px;
+  }
+}
